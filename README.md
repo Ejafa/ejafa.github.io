@@ -9,9 +9,11 @@ Personal research portfolio at [ejafa.github.io](https://ejafa.github.io/).
 - `assets/Ejafa_Bassam_CV.pdf`: downloadable CV.
 - `assets/favicon.svg`: site icon.
 - `assets/ejafa-profile.webp`: optimized profile portrait.
+- `assets/ejafa-research.webp`, `assets/ejafa-graduation.webp`: additional treemap photos.
+- `treemap.js`: cyclic photo positions, manual selection, and playback controls.
 - `.nojekyll`: serves the site as plain static files on GitHub Pages.
 
-There are no build dependencies, external fonts, analytics, or JavaScript requirements. GitHub Pages serves the root of the `master` branch.
+There are no build dependencies, external fonts, or analytics. The page remains readable without JavaScript; a small script enhances the three-photo treemap with rotation. It starts with the coastal portrait, pauses on hover or keyboard focus, and starts paused when reduced motion is requested. Selecting a photo pauses rotation until Play is selected. GitHub Pages serves the root of the `master` branch.
 
 ## Update content
 

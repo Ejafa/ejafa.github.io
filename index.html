@@ -12,7 +12,8 @@
   <meta property="og:url" content="https://ejafa.github.io/">
   <link rel="canonical" href="https://ejafa.github.io/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=portrait">
+  <link rel="stylesheet" href="styles.css?v=treemap-photos">
+  <script src="treemap.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -46,8 +47,33 @@
           <a href="https://www.linkedin.com/in/ejafabassam/">LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-      <figure class="profile-portrait">
-        <img src="assets/ejafa-profile.webp" alt="Ejafa Bassam smiling, with the sea and distant mountains behind him" width="1254" height="1254" fetchpriority="high" decoding="async">
+      <figure class="profile-mix" aria-label="Three photos of Ejafa, in a rotating treemap inspired by TreemapMix">
+        <div class="mix-heading"><span>A few views of me</span><span class="mix-counter" aria-hidden="true">01 / 03</span></div>
+        <div class="photo-treemap">
+          <button class="photo-tile" type="button" data-photo="0" data-slot="0" aria-label="Make the coastal portrait the main photo" aria-pressed="true">
+            <img src="assets/ejafa-profile.webp" alt="Ejafa smiling by the sea" width="1254" height="1254" fetchpriority="high" decoding="async">
+            <span class="photo-caption" aria-hidden="true"><span>01</span><span>Exploring</span></span>
+          </button>
+          <button class="photo-tile" type="button" data-photo="1" data-slot="1" aria-label="Make the research photo the main photo" aria-pressed="false">
+            <img src="assets/ejafa-research.webp" alt="Ejafa working at a computer" width="1280" height="855" decoding="async">
+            <span class="photo-caption" aria-hidden="true"><span>02</span><span>Researching</span></span>
+          </button>
+          <button class="photo-tile" type="button" data-photo="2" data-slot="2" aria-label="Make the graduation photo the main photo" aria-pressed="false">
+            <img src="assets/ejafa-graduation.webp" alt="Ejafa in graduation robes, holding an umbrella beside a lake and pagoda" width="855" height="1280" decoding="async">
+            <span class="photo-caption" aria-hidden="true"><span>03</span><span>Milestones</span></span>
+          </button>
+        </div>
+        <figcaption class="mix-footer">
+          <div><a href="#research">Inspired by TreemapMix <span aria-hidden="true">↗</span></a><span class="mix-hint">Three photos. Cyclic views.</span></div>
+          <div class="mix-controls" hidden>
+            <div class="mix-selectors" role="group" aria-label="Choose the main photo">
+              <button type="button" data-select="0" aria-label="Show coastal portrait" aria-pressed="true">01</button>
+              <button type="button" data-select="1" aria-label="Show research photo" aria-pressed="false">02</button>
+              <button type="button" data-select="2" aria-label="Show graduation photo" aria-pressed="false">03</button>
+            </div>
+            <button class="mix-playback" type="button" aria-label="Pause photo rotation">Pause <span aria-hidden="true">Ⅱ</span></button>
+          </div>
+        </figcaption>
       </figure>
     </section>
 
