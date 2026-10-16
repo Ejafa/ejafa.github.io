@@ -200,142 +200,23 @@ h1 {
   font-size:10px;
   margin-left:3px
 }
-.research-figure {
-  border:1px solid #dfceca;
-  border-radius:4px;
-  padding:23px;
-  background:#f3ede8;
-  transform:rotate(1.5deg);
-  position:relative
-}
-.research-figure:before {
-  content:'';
-  position:absolute;
-  inset:8px -9px -9px 8px;
-  border:1px solid var(--line);
-  border-radius:4px;
-  z-index:-1
-}
-.figure-top {
-  display:flex;
-  justify-content:space-between;
-  font-size:9px;
-  text-transform:uppercase;
-  letter-spacing:1.5px;
-  color:#856269;
-  margin-bottom:26px
-}
-.treemap-art {
-  display:grid;
-  grid-template-columns:1.35fr 1fr;
-  grid-template-rows:105px 57px 79px;
-  gap:5px
-}
-.tile {
-  padding:14px;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  border-radius:2px;
-  position:relative;
-  overflow:hidden
-}
-.tile>span:first-child {
-  font-size:10px;
-  letter-spacing:1px
-}
-.tile small {
-  font-size:9px;
-  letter-spacing:1px;
-  text-transform:uppercase
-}
-.tile-a {
-  grid-row:1/4;
-  background:#8c1d2c;
-  color:#fff5ee
-}
-.tile-a .tile-symbol {
-  position:absolute;
-  left:50%;
-  top:45%;
-  transform:translate(-50%,-50%);
-  font-size:104px;
-  font-family:var(--serif);
-  font-weight:400;
-  line-height:1;
-  color:#f3d6ce
-}
-.tile-b {
-  background:#e8bfc3;
-  grid-row:1/3;
-  color:#8c1d2c
-}
-.tile-orbit {
-  position:absolute;
-  width:72px;
-  height:72px;
-  border:1px solid #a65661;
-  border-radius:50%;
-  right:18px;
-  bottom:18px
-}
-.tile-orbit:before,.tile-orbit:after {
-  content:'';
-  position:absolute;
+.profile-portrait {
   width:100%;
-  height:100%;
-  border:1px solid #a65661;
-  border-radius:50%;
-  left:-19px;
-  top:-11px
+  max-width:430px;
+  justify-self:center;
+  padding:9px;
+  border:1px solid var(--line);
+  border-radius:8px;
+  background:#f3ede8;
+  box-shadow:10px 10px 0 #f0e5e1
 }
-.tile-orbit:after {
-  left:8px;
-  top:-24px
-}
-.tile-c {
-  background:#e4cab5;
-  grid-row:3;
-  grid-column:2;
-  padding:10px
-}
-.tile-grid {
-  position:absolute;
-  right:12px;
-  bottom:12px;
-  width:44px;
-  height:36px;
-  background:repeating-linear-gradient(90deg,transparent 0 10px,#a57659 10px 11px),repeating-linear-gradient(0deg,transparent 0 10px,#a57659 10px 11px)
-}
-.figure-equation {
-  margin-top:17px;
-  display:flex;
-  justify-content:center;
-  gap:17px;
-  align-items:center;
-  font-size:10px;
-  color:#805c63
-}
-.equation-plus {
-  font-family:var(--serif);
-  font-size:20px;
-  color:#ac8388
-}
-.research-figure figcaption {
-  font-family:var(--serif);
-  font-size:25px;
-  line-height:1.3;
-  margin-top:22px;
-  letter-spacing:-.5px
-}
-.research-figure figcaption em {
-  font-size:24px;
-  color:#8a6169
-}
-.figure-note {
-  font-size:9px;
-  color:#826c70;
-  margin-top:12px
+.profile-portrait img {
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:1;
+  object-fit:cover;
+  border-radius:4px
 }
 .direction-strip {
   border-block:1px solid var(--line);
@@ -767,20 +648,7 @@ details p {
     gap:40px;
     padding-top:65px
   }
-  .research-figure {
-    padding:18px
-  }
   .hero-question {
-    font-size:22px
-  }
-  .treemap-art {
-    grid-template-rows:88px 48px 68px
-  }
-  .figure-equation {
-    font-size:9px;
-    gap:12px
-  }
-  .research-figure figcaption,.research-figure figcaption em {
     font-size:22px
   }
   .project-card {
@@ -853,27 +721,6 @@ details p {
   }
   .social-links {
     font-size:11px
-  }
-  .research-figure {
-    max-width:440px;
-    width:calc(100% - 12px);
-    justify-self:center;
-    padding:22px;
-    transform:rotate(1deg)
-  }
-  .figure-top {
-    margin-bottom:19px
-  }
-  .treemap-art {
-    grid-template-rows:86px 38px 65px;
-    grid-template-columns:1.45fr 1fr
-  }
-  .figure-equation {
-    gap:20px;
-    font-size:10px
-  }
-  .research-figure figcaption,.research-figure figcaption em {
-    font-size:25px
   }
   .direction-strip {
     grid-template-columns:1fr;
@@ -1060,7 +907,7 @@ details p {
   .shell {
     width:100%
   }
-  .site-header,.research-figure,.hero-actions,.social-links,.contact-section,.site-footer,.skip-link,details {
+  .site-header,.profile-portrait,.hero-actions,.social-links,.contact-section,.site-footer,.skip-link,details {
     display:none
   }
   .hero {

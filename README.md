@@ -8,6 +8,7 @@ Personal research portfolio at [ejafa.github.io](https://ejafa.github.io/).
 - `styles.css`: responsive layout, print styles, and reduced-motion support.
 - `assets/Ejafa_Bassam_CV.pdf`: downloadable CV.
 - `assets/favicon.svg`: site icon.
+- `assets/ejafa-profile.webp`: optimized profile portrait.
 - `.nojekyll`: serves the site as plain static files on GitHub Pages.
 
 There are no build dependencies, external fonts, analytics, or JavaScript requirements. GitHub Pages serves the root of the `master` branch.
