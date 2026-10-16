@@ -14,7 +14,7 @@ Personal research portfolio at [ejafa.github.io](https://ejafa.github.io/).
 - `treemap.js`: automatic cyclic photo positions and playback control.
 - `.nojekyll`: serves the site as plain static files on GitHub Pages.
 
-There are no build dependencies, external fonts, or analytics. The page remains readable without JavaScript; a small script enhances the five-photo treemap with automatic rotation. Every photo takes a turn in the largest box. There are no photo-selection controls, and hovering does not stop rotation. A small Play/Pause control is provided; reduced-motion preferences start rotation paused. All displayed photos come directly from the original photographs, with no generated face or expression. GitHub Pages serves the root of the `master` branch.
+There are no build dependencies, external fonts, or analytics. The page remains readable without JavaScript; a small script enhances the five-photo treemap with automatic rotation. Every photo takes a turn in the largest box. Rotation starts automatically on every visit; there are no photo-selection controls, and hovering does not stop rotation. A small Pause control allows visitors to stop it. Reduced-motion preferences disable the animated transitions while keeping the automatic cycle. All displayed photos come directly from the original photographs, with no generated face or expression. GitHub Pages serves the root of the `master` branch.
 
 ## Update content
 

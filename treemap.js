@@ -5,9 +5,8 @@
   const photos = [...figure.querySelectorAll('[data-photo]')];
   const playback = figure.querySelector('.mix-playback');
   const counter = figure.querySelector('.mix-counter');
-  const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let active = 0;
-  let paused = motion.matches;
+  let paused = false;
   let visible = true;
 
   function updatePlayback() {
@@ -32,12 +31,6 @@
     updatePlayback();
   });
 
-  motion.addEventListener('change', event => {
-    if (event.matches) {
-      paused = true;
-      updatePlayback();
-    }
-  });
   if ('IntersectionObserver' in window) {
     new IntersectionObserver(entries => { visible = entries[0].isIntersecting; }).observe(figure);
   }
