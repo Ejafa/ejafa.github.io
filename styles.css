@@ -237,28 +237,41 @@ h1 {
   overflow:hidden;
   border-radius:3px;
   background:var(--crimson);
-  cursor:pointer;
   transition:left .85s cubic-bezier(.22,.7,.2,1),top .85s cubic-bezier(.22,.7,.2,1),width .85s cubic-bezier(.22,.7,.2,1),height .85s cubic-bezier(.22,.7,.2,1)
 }
 .photo-tile[data-slot="0"] {
   left:0;
   top:0;
   width:calc(64% - 3px);
-  height:100%;
+  height:calc(70% - 3px);
   z-index:2
 }
 .photo-tile[data-slot="1"] {
   left:calc(64% + 3px);
   top:0;
   width:calc(36% - 3px);
-  height:calc(60% - 3px);
+  height:calc(50% - 3px);
   z-index:1
 }
 .photo-tile[data-slot="2"] {
   left:calc(64% + 3px);
-  top:calc(60% + 3px);
+  top:calc(50% + 3px);
   width:calc(36% - 3px);
-  height:calc(40% - 3px);
+  height:calc(50% - 3px);
+  z-index:1
+}
+.photo-tile[data-slot="3"] {
+  left:0;
+  top:calc(70% + 3px);
+  width:calc(32% - 3px);
+  height:calc(30% - 3px);
+  z-index:1
+}
+.photo-tile[data-slot="4"] {
+  left:calc(32% + 3px);
+  top:calc(70% + 3px);
+  width:calc(32% - 6px);
+  height:calc(30% - 3px);
   z-index:1
 }
 .photo-tile img {
@@ -268,11 +281,22 @@ h1 {
   object-fit:cover;
   object-position:50% 48%
 }
+.photo-tile[data-photo="0"] img {
+  object-position:75% 55%;
+  transform:scale(1.6);
+  transform-origin:100% 62%
+}
 .photo-tile[data-photo="1"] img {
   object-position:44% 35%
 }
 .photo-tile[data-photo="2"] img {
   object-position:28% 52%
+}
+.photo-tile[data-photo="3"] img {
+  object-position:65% 46%
+}
+.photo-tile[data-photo="4"] img {
+  object-position:51% 43%
 }
 .photo-tile:after {
   content:'';
@@ -280,11 +304,6 @@ h1 {
   inset:55% 0 0;
   background:linear-gradient(transparent,rgba(34,15,21,.65));
   pointer-events:none
-}
-.photo-tile:focus-visible {
-  outline:3px solid var(--accent);
-  outline-offset:3px;
-  z-index:3
 }
 .photo-caption {
   position:absolute;
@@ -328,11 +347,7 @@ h1 {
   gap:10px;
   align-items:center
 }
-.mix-selectors {
-  display:flex;
-  gap:4px
-}
-.mix-selectors button,.mix-playback {
+.mix-playback {
   font:inherit;
   font-size:10px;
   line-height:1.2;
@@ -345,11 +360,7 @@ h1 {
   padding:6px;
   cursor:pointer
 }
-.mix-selectors button[aria-pressed="true"] {
-  background:var(--crimson);
-  color:#fff
-}
-.mix-selectors button:hover,.mix-playback:hover {
+.mix-playback:hover {
   border-color:#b98c92
 }
 .mix-playback span {
